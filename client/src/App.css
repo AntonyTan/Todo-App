@@ -1,0 +1,164 @@
+* {
+  font-family: 'Trebuchet MS';
+  font-size: 16px;
+}
+
+body{
+  background: linear-gradient(
+    0deg,
+    rgb(49, 104, 212) 0%,
+    rgb(77, 221, 178) 100%
+  ) fixed;
+}
+
+.dashboard{
+  background: white;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  height: 640px;
+}
+h1 {
+  font-size: 32px;
+  text-align: center;
+}
+.todo-form{
+  margin-bottom: 32px;
+  display: flex;
+}
+
+.todo-form-input{
+  display: flex;
+  width: 340px;
+  padding: 16px;
+  margin-left: 30px;
+}
+.todo-button{
+  margin-right: 30px;
+  width: 100px;
+}
+
+.todo-list{
+  height: 440px;
+  overflow:scroll;
+}
+
+.todo-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px auto;
+  background: rgba(95, 89, 89, 0.1);
+  padding: 16px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.todo-input-edit{
+  padding: 16px;
+  width: 340px;
+}
+
+.complete{
+  text-decoration: line-through;  
+}
+
+.icons{
+  display: flex;
+  cursor: pointer;
+  font-size: 20px;
+}
+.delete-icon{
+  margin-right: 8px;
+  color: red;
+}
+.edit-icon{
+  margin-right: 8px;
+  color: rgb(125, 125, 245);
+
+}
+.complete-icon{
+  color: green;
+}
+
+.auth-body{
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+
+.auth-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 200px;
+}
+.auth-input{
+  padding: 16px;
+  width: 80%;
+}
+
+.auth-button{
+  padding: 16px;
+  width: 30%;
+}
+.toggleAuth{
+  color: orange;
+  text-decoration: underline;
+  text-align: center;
+}
+#logout{
+  text-align: right;
+  margin-right: 10px;
+}
+/* mobile screens */
+@media only screen and (max-width: 550px){
+  *{
+    font-size: 12px;
+  }
+  .auth-form{
+    justify-content: space-evenly;
+  }
+  .auth-body{
+    width: 80%;
+    height: 80%;
+    height: 400px;
+    min-width: 250px;
+  }
+  .auth-input{
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 24px;
+  }
+
+  .toggleAuth{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .dashboard{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+  }
+  .todo-form{
+    margin-bottom: 10px;
+  }
+  .todo-form-input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0px;
+  }
+  .todo-button{
+    width: 50px;
+  }
+  .todo-row{
+    padding: 10px;
+  }
+}
