@@ -5,7 +5,3 @@ A web app that allows users to log in, add, delete, edit, and complete tasks on 
 Created using the PERN stack. Uses Bcrypt and JWT for authentication and authorisation.
 
 Supports PC and Mobile screens.
-
-
-Version 2 is in a work in progress, and can be found at https://project-management-awt.herokuapp.com/.
-
